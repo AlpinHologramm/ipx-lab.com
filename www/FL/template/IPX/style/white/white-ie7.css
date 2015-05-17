@@ -1,0 +1,66 @@
+/* IE 7 */
+/**************************************************
+*
+*	Vignettes.
+*
+**************************************************/
+#igalerie .thumbs dl {
+	float: left;
+	margin: 8px 8px 0 8px;
+}
+#igalerie .thumbs.l0 dl {
+	margin-bottom: 8px;
+}
+#igalerie .thumbs.l1 ul {
+	height: 1.35em;
+}
+#igalerie .thumbs.l2 ul {
+	height: 2.7em;
+}
+#igalerie .thumbs.l3 ul {
+	height: 4.05em;
+}
+#igalerie .thumbs.l4 ul {
+	height: 5.4em;
+}
+#igalerie .thumbs.l5 ul {
+	height: 6.75em;
+}
+#igalerie .thumbs.l6 ul {
+	height: 8.1em;
+}
+#igalerie .thumbs.l7 ul {
+	height: 9.45em;
+}
+#igalerie .thumbs.l8 ul {
+	height: 10.8em;
+}
+#igalerie .thumbs.l9 ul {
+	height: 12.15em;
+}
+#igalerie .thumbs li {
+	height: 1.35em;
+	overflow: hidden;
+	white-space: nowrap;
+}
+#igalerie .thumbs li.title {
+	max-height: 3.2em;
+}
+
+/* Mode étendu */
+#igalerie .thumbs.thumbs_extended dl {
+	float: none;
+}
+#igalerie .thumbs.thumbs_extended dt {
+	margin-right: 10px;
+}
+#igalerie .thumbs.thumbs_extended ul {
+	height: auto;
+}
+#igalerie .thumbs.thumbs_extended li {
+	display: inline;
+}
+#igalerie .thumbs.thumbs_extended li.title,
+#igalerie .thumbs.thumbs_extended li.description {
+	height: auto;
+}

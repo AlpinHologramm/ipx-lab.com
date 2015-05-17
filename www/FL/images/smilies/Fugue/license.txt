@@ -1,0 +1,4 @@
+Fugue 1.6
+Copyright © 2009 Yusuke Kamiyamane. All rights reserved.
+Creative Commons Attribution 3.0 license
+http://pinvoke.com/

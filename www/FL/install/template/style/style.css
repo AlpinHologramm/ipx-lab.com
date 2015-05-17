@@ -1,0 +1,301 @@
+/**************************************************
+*
+*	Structure générale.
+*
+**************************************************/
+h1,h2,h3,h4,h5,h6,p,td,form,ul,img,dl,dt,dd,body,html,optgroup {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body {
+	height: 100%;
+}
+html {
+	font-size: 100%;
+}
+body {
+	color: black;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: .8em;
+	background: #fafafa;
+}
+#global {
+	text-align: center;
+}
+a {
+	color: black;
+	text-decoration: none;
+	border-bottom: 1px solid #884C2E;
+	position: relative;
+}
+a:hover {
+	border-width: 2px;
+	height: auto; /* Opera Fix */
+}
+a.ex {
+	padding-right: .9em;
+	margin-right: 3px;
+	background: url(../../../admin/template/default/style/default/links-external.png) no-repeat 100% 50%;
+	position: static;
+}
+option[selected="selected"] {
+	font-weight: bold;
+}
+input {
+	outline: none;
+}
+select {
+	border: 1px solid silver;
+}
+
+
+
+/**************************************************
+*
+*	Bloc central.
+*
+**************************************************/
+h1 {
+	font-size: 200%;
+	font-weight: bold;
+	border-bottom: 3px solid #858055;
+	padding: 20px 15px 5px 22px;
+	color: #555;
+	font-family: Georgia, "Times New Roman", serif;
+	letter-spacing: .02em;
+	background: #F6F4E5 url(../../../admin/template/default/style/default/background.png);
+}
+h2 {
+	font-size: 125%;
+	font-weight: bold;
+	color: #222;
+	padding: 20px 15px 15px 22px;
+	border-bottom: 1px solid gray;
+	margin-bottom: 10px;
+}
+h2 a {
+	border: 0;
+	padding: 0;
+}
+h3 {
+	color: #333;
+	font-size: 120%;
+	margin-bottom: 20px;
+}
+p {
+	margin-bottom: 15px;
+}
+#install {
+	border: 1px solid #808080;
+	width: 520px;
+	margin: 25px auto;
+	text-align: left;
+	background: white;
+	box-shadow: 0 0 14px #989898;
+	-moz-box-shadow: 0 0 14px #989898;
+	-webkit-box-shadow: 0 0 14px #989898;
+}
+#footer {
+	text-align: center;
+	border-top: 2px solid #858055;
+	background: #F6F4E5 url(../../../admin/template/default/style/default/background.png);
+	padding: 5px 0;
+	height: 20px;
+	margin: 30px 0 0;
+}
+
+
+
+/**************************************************
+*
+*	Contenu.
+*
+**************************************************/
+#content {
+	padding: 15px 20px 0;
+}
+#installed {
+	margin: 20px 0 40px;
+	font-weight: bold;
+	color: #222;
+}
+#welcome {
+	margin: 0 0 30px;
+	font-size: 180%;
+	letter-spacing: .05em;
+	font-family: Georgia, serif;
+	font-style: italic;
+}
+#welcome strong {
+	color: #222;
+}
+#langs_switch {
+	margin-bottom: 30px;
+}
+#steps {
+	margin: 10px 0 25px;
+	list-style: square;
+}
+#steps li {
+	margin: 0 0 6px 35px;
+	color: #2F3D59;
+	font-size: 110%;
+}
+#next {
+	text-align: right;
+	margin-top: 50px;
+	background: url(arrow.png) no-repeat 100% 60%;
+	padding-right: 25px;
+}
+#next a {
+	font-weight: bold;
+	font-size: 140%;
+	color: #555;
+}
+
+/* Icones */
+.icon {
+	padding: 1px 0 0 24px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	min-height: 18px;
+}
+.icon span {
+	font-weight: bold;
+	color: #333;
+}
+.icon_ok {
+	background-image: url(../../../admin/template/default/style/default/icons/18x18/success.png);
+}
+.icon_error {
+	background-image: url(../../../admin/template/default/style/default/icons/18x18/error.png);
+}
+.icon_warning {
+	background-image: url(../../../admin/template/default/style/default/icons/18x18/warning.png);
+}
+.icon_exclamation {
+	background-image: url(../../../admin/template/default/style/default/icons/18x18/exclamation.png);
+	font-weight: bold;
+	color: #333;
+	line-height: 1.4em;
+	margin-top: 30px;
+	padding-left: 26px;
+	background-position: 0 1px;
+}
+.icon_information {
+	background-image: url(../../../admin/template/default/style/default/icons/18x18/information.png);
+	line-height: 1.4em;
+	margin-top: 30px;
+	padding-left: 26px;
+	background-position: 0 1px;
+}
+
+/* Rapport */
+#report {
+	margin: 0 0 25px 5px;
+	font-weight: bold;
+}
+#report .icon_error {
+	color: #D60E0E;
+}
+#report .icon_warning {
+	color: #C38A1B;
+}
+.install_msg {
+	font-weight: bold;
+	color: #333;
+	line-height: 1.5em;
+	padding: 10px;
+	border: 1px solid silver;
+	margin: 0 18px 20px 22px;
+}
+.install_error {
+	border-left: 4px solid #A11212;
+}
+.install_warning {
+	border-left: 4px solid #B09E36;
+}
+.icon .install_msg {
+	margin-left: 5px;
+}
+
+/* Fin de l'installation */
+#msg_install_ok {
+	font-size: 180%;
+	font-style: italic;
+	font-family: Georgia, serif;
+	padding-left: 26px;
+	background-position: 0 5px;
+	margin-bottom: 5px;
+}
+#admin_link {
+	margin: 50px 0;
+	text-align: center;
+}
+#admin_link a {
+	font-size: 150%;
+	color: #2D4C6F;
+	border-color: #2D4C6F;
+}
+
+
+
+/**************************************************
+*
+*	Formulaires.
+*
+**************************************************/
+fieldset {
+	margin: 0;
+	padding: 0 0 0 5px;
+	border: 0;
+}
+
+/* Champs */
+input.text {
+	padding: 3px;
+	background: #F9F8EF;
+	border: 1px solid silver;
+}
+input.text:focus {
+	border-color: #9D9977;
+}
+.field_ftw input,
+.field_ftw select {
+	display: block;
+	margin-top: 6px;
+}
+.field_ftw .text {
+	width: 20em;
+}
+.field_error {
+	font-weight: bold;
+	color: #222;
+}
+.field_error input,
+.field_error input:focus {
+	border-color: #C38A1B;
+	outline: 1px solid #C38A1B;
+}
+
+/* Boutons */
+input.submit {
+	border: 1px solid silver;
+	outline: 0;
+	background: url(../../../admin/template/default/style/default/submit.png) repeat-x center;
+	margin: 20px 0 0 3px;
+	padding: 0 6px 2px;
+	height: 26px;
+	white-space: nowrap;
+	vertical-align: middle;
+	display: inline-block;
+	overflow: visible;
+	font-family: Arial, Verdana, sans-serif;
+	border-radius: 5px;
+}
+input.submit:hover {
+	background: url(../../../admin/template/default/style/default/submit-hover.png) repeat-x top left;
+	box-shadow: 0 0 2px gray;
+}

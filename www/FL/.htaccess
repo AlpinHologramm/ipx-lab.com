@@ -1,0 +1,22 @@
+Options -Indexes
+Options -MultiViews
+
+<Files ~ "\.(inc|ttf)$">
+	Deny from all
+</Files>
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteBase /FL/
+	RewriteRule ^sitemap\.xml$ sitemap.php [L,NC]
+	RewriteRule image/[^/]+/(\d+)-.*\.(gif|jpe?g|png)$ image.php?id=$1 [L,NC]
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond $1 !^favicon\.ico
+	RewriteCond $1 !^(favicon\.ico|robots\.txt|sitemap\.php|sitemap\.xml)
+	RewriteRule (.*) index.php?q=$1 [QSA,L]
+</IfModule>
+
+<IfModule mod_security.c>
+	SecFilterEngine Off
+</IfModule>

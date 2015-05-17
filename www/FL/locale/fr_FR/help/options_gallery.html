@@ -1,0 +1,60 @@
+				<div class="h_item" id="h_banner">
+					<h3>Bannière</h3>
+					<p class="last">Vous avez la possibilité de placer une bannière à la place du titre (mais le titre de la galerie sera toujours utilisé dans la barre de titre du navigateur, ainsi qu'en remplacement de la bannière au cas où celle-ci ne s'afficherait pas). Pour cela, vous devez placer une image au format <acronym title="Joint Picture Expert's Group">JPEG</acronym>, <acronym title="Graphics Interchange Format">GIF</acronym> ou <acronym title="Portable Network Graphics">PNG</acronym>, et avec l'extension .jpg, .gif ou .png, dans le répertoire "images/banners". Le nom de fichier des images ne doit contenir que des tirets (-), soulignés (_) et caractères alphanumériques (a-z et 0-9).</p>
+				</div>
+				<div class="h_item" id="h_nohits_useragent">
+					<h3>Visites</h3>
+					<h4>Exclusion par User-Agent</h4>
+					<p>Si l'<a class="ex" href="http://fr.wikipedia.org/wiki/User-Agent">User-Agent</a> de l'utilisateur se trouve dans cette liste, le nombre de visites des images ne sera pas incrémenté. Cela peut être utile pour exclure certains robots par exemple.</p>
+					<p class="last">Utilisez les jokers (?) et (*) pour remplacer respectivement n'importe quel caractère ou n'importe quelle suite de caractères.</p>
+				</div>
+				<div class="h_item" id="h_url_rewriting">
+					<h3>URL rewriting</h3>
+					<p class="last">L'<acronym title="Uniform Resource Locator">URL</acronym> rewriting permet d'obtenir des URL plus courtes en supprimant le "?q=" des URL. C'est à dire qu'au lieu d'avoir des URL de ce type&nbsp;:</p>
+<pre>
+http://www.igalerie.org/demo/?q=album/3-nature
+</pre>
+					<p>l'URL rewriting permet d'obtenir ceci&nbsp;:</p>
+<pre>
+http://www.igalerie.org/demo/album/3-nature
+</pre>
+					<p>Pour que l'URL rewriting fonctionne, et avant d'activer la fonctionnalité, vous devez ajouter au fichier .htaccess situé dans le répertoire d'iGalerie les lignes suivantes (si elles ne sont pas déjà présentes)&nbsp;:</p>
+<pre>
+&lt;IfModule mod_rewrite.c&gt;
+	RewriteEngine on
+	RewriteBase <?php echo CONF_GALLERY_PATH; ?>/
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule (.*) index.php?q=$1 [QSA,L]
+&lt;/IfModule&gt;
+</pre>
+				</div>
+				<div class="h_item" id="h_integrated">
+					<h3>Intégration</h3>
+					<p class="last">Cochez cette case si iGalerie est destiné à être intégré dans un fichier de votre site.</p>
+				</div>
+				<div class="h_item" id="h_recaptcha">
+					<h3>reCAPTCHA</h3>
+					<p>reCAPTCHA est un service de Google permettant de placer une protection <a href="http://fr.wikipedia.org/wiki/CAPTCHA" class="ex">CAPTCHA</a> sur certains formulaires afin d'éviter les abus (spam ou autre).</p>
+					<p class="last">Pour utiliser ce service, vous devez créer un compte Google et récupérer sur le site de <a href="http://www.google.com/recaptcha" class="ex">reCAPTCHA</a> les clés privée et publique pour votre site.</p>
+				</div>
+				<div class="h_item" id="h_langs">
+					<h3>Langues</h3>
+					<h4>Désinstallation des langues</h4>
+					<p>Notez qu'il est impossible de désinstaller la langue par défaut.</p>
+					<p class="last icon icon_exclamation">Attention ! Si vous désinstallez une langue, tous vos textes localisés dans cette langue seront définitivement supprimés !</p>
+				</div>
+				<div class="h_item" id="h_gd">
+					<h3>Paramètres GD</h3>
+					<h4>Gestion de la transparence</h4>
+					<p class="last">Vous devez activer cette option si vous avez des images au format <acronym title="Graphics Interchange Format">GIF</acronym> ou <acronym title="Portable Network Graphics">PNG</acronym> et que vous souhaitez conserver la transparence de vos images pour les vignettes et les images de taille intermédiaires.</p>
+				</div>
+				<div class="h_item" id="h_add_images">
+					<h3>Ajout d'images</h3>
+					<h4>Ajouter tous les fichiers au rapport</h4>
+					<p>Si cette option est activée, le rapport de scan par <acronym title="File Transfer Protocol">FTP</acronym> mentionnera tous les fichiers trouvés qui ont été rejetés, et pas seulement les images.</p>
+					<h4>Mettre à jour les informations des images</h4>
+					<p>Si cette option est activée, le scan par FTP mettra à jour les informations des images modifiées. Si par exemple vous avez remplacé une image en modifiant sa taille, celle-ci sera mise à jour en base de données. Notez que cette option augmente sensiblement la durée de scan, à cause du fait qu'il faut vérifier chaque image d'un album mis à jour.</p>
+					<h4>Choisir une nouvelle vignette pour les catégories mises à jour</h4>
+					<p class="last">Si cette option est activée, une nouvelle vignette sera choisie pour les albums et catégories mis à jour. L'image choisie comme vignette ne l'est pas au hasard, il s'agit toujours de la dernière image ajoutée lors du scan. Cette option concerne autant le scan par FTP que l'ajout d'images par <acronym title="HyperText Transfer Protocol">HTTP</acronym> (c'est à dire l'envoi d'images par le navigateur).</p>
+				</div>

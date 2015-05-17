@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<error md5="9ae38bbb059e173e50e9ec171455f044">
+	<version>2.3.4</version>
+	<type>DB_ERROR</type>
+	<date>2015-05-09 13:53:25</date>
+	<q>session-expire</q>
+	<file>includes%2Fclasses%2Fdb.class.php</file>
+	<line>252</line>
+	<message>SQLSTATE%5B23000%5D%3A+Integrity+constraint+violation%3A+1062+Duplicate+entry+%277%27+for+key+%27ipx_uk2_users%27</message>
+	<details>a%3A3%3A%7Bs%3A4%3A%22code%22%3Bs%3A5%3A%2223000%22%3Bs%3A5%3A%22trace%22%3Ba%3A4%3A%7Bi%3A0%3Bs%3A129%3A%22includes%2Fclasses%2Fdb.class.php+line+252%3A%0APDO-%3Eexec%28%26%23039%3BUPDATE+ipx_users%0A%09%09%09%09+++SET+session_id+%3D+7%0A%09%09%09%09+WHERE+user_id+%3D+1%26%23039%3B%29%0A%22%3Bi%3A1%3Bs%3A129%3A%22includes%2Fclasses%2Fuser.class.php+line+96%3A%0Adb-%3Eexec%28%26%23039%3BUPDATE+ipx_users%0A%09%09%09%09+++SET+session_id+%3D+7%0A%09%09%09%09+WHERE+user_id+%3D+1%26%23039%3B%29%0A%22%3Bi%3A2%3Bs%3A59%3A%22admin%2Fconnexion.php+line+210%3A%0Auser%3A%3Aauth%28%27%2A%2A%2A%2A%2A%27%2C+%27%2A%2A%2A%2A%2A%27%29%0A%22%3Bi%3A3%3Bs%3A48%3A%22admin%2Fconnexion.php+line+47%3A%0Aconnexion%3A%3Alogin%28%29%0A%22%3B%7Ds%3A10%3A%22additional%22%3Ba%3A2%3A%7Bs%3A3%3A%22sql%22%3Bs%3A65%3A%22UPDATE+ipx_users%0A%09%09%09%09+++SET+session_id+%3D+7%0A%09%09%09%09+WHERE+user_id+%3D+1%22%3Bs%3A6%3A%22params%22%3BN%3B%7D%7D</details>
+</error>

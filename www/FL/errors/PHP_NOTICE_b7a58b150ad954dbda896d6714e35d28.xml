@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<error md5="b7a58b150ad954dbda896d6714e35d28">
+	<version>2.3.4</version>
+	<type>PHP_NOTICE</type>
+	<date>2015-05-09 13:35:21</date>
+	<q>users-sendmail</q>
+	<file>admin%2Findex.php</file>
+	<line>16767</line>
+	<message>Undefined+index%3A+users_list</message>
+	<details>a%3A1%3A%7Bi%3A0%3Bs%3A45%3A%22admin%2Findex.php+line+1847%3A%0Ausers%3A%3Asendmail%28%29%0A%22%3B%7D</details>
+</error>

@@ -1,0 +1,12 @@
+				<div class="h_item" id="h_mass_edit">
+					<h3>Édition en masse</h3>
+					<p>L'édition en masse permet d'éditer plusieurs images à la fois pour remplir un ou plusieurs champs à l'identique (titre, description, tags, etc.), ou bien pour remplir ces champs avec des "variables" prédéfinies.</p>
+
+					<h4>Variables</h4>
+					<p>Les variables sont disponibles pour tous les champs de la partie "Informations", mais pas pour la partie "Tags". Si vous souhaitez ne pas modifier un champ de la partie "Informations", vous devez le laisser tel quel avec sa variable correspondante. Par exemple, le champ "Titre" contient par défaut uniquement la variable "<span class="code">{IMAGE_TITLE}</span>". Cette variable correspond au titre courant de l'image et donc celui-ci ne sera pas modifié si vous laissez ce champ tel quel.</p>
+					<p>Il est possible d'utiliser les variables suivantes dans n'importe quel champ (sauf ceux de la partie "Tags")&nbsp;:</p>
+					<p><span class="code">{ALBUM_DESCRIPTION}</span>, <span class="code">{ALBUM_ID}</span>, <span class="code">{ALBUM_TITLE}</span>, <span class="code">{COUNTER}</span>, <span class="code">{IMAGE_CRTDT}</span>, <span class="code">{IMAGE_DESCRIPTION}</span>, <span class="code">{IMAGE_FILENAME}</span>, <span class="code">{IMAGE_FILENAME_TITLE}</span>, <span class="code">{IMAGE_FILENAME_URLNAME}</span>, <span class="code">{IMAGE_FILESIZE}</span>, <span class="code">{IMAGE_HEIGHT}</span>, <span class="code">{IMAGE_ID}</span>, <span class="code">{IMAGE_LATITUDE}</span>, <span class="code">{IMAGE_LONGITUDE}</span>, <span class="code">{IMAGE_PATH}</span>, <span class="code">{IMAGE_PLACE}</span>, <span class="code">{IMAGE_TITLE}</span>, <span class="code">{IMAGE_URLNAME}</span>, <span class="code">{IMAGE_WIDTH}</span></p>
+
+					<h4>Compteur</h4>
+					<p class="last">La variable <span class="code">{COUNTER}</span> sera remplacée par un nombre qui est incrémenté pour chaque image sélectionnée. Par exemple, en indiquant "image-<span class="code">{COUNTER}</span>" dans le champ "Nom d'URL", le nom d'URL des images sélectionnées deviendra "image-1", "image-2", "image-3", etc. Le compteur démarre par défaut à 1 et vous pouvez changer cette valeur dans la partie "Options".</p>
+				</div>

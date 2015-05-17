@@ -1,0 +1,10 @@
+				<div class="h_item" id="h_ftp">
+					<h3>Ajout d'images par FTP</h3>
+					<p>Ici seront ajoutées à la base de données ou mis à jour les images que vous aurez envoyées par <acronym title="File Transfer Protocol">FTP</acronym> dans le répertoire des albums&nbsp;:</p>
+					<pre><?php echo CONF_GALLERY_PATH . '/' . CONF_ALBUMS_DIR . '/'; ?></pre>
+					<p>Il n'est pas possible de placer des images à la racine du répertoire des albums, car elles seront ignorées. Vous devez placer vos images dans des répertoires ou des sous-répertoires en respectant le schéma d'organisation utilisé par iGalerie&nbsp;:</p>
+					<p>(catégorie) / (sous-catégories) / album / image</p>
+					<p>Les formats d'images acceptés sont : <acronym title="Joint Picture Expert's Group">JPEG</acronym>, <acronym title="Graphics Interchange Format">GIF</acronym> et <acronym title="Portable Network Graphics">PNG</acronym>. L'extension des images doit être .jpg, .jpeg, .gif ou .png. Le nom de fichier des images ne doit contenir que les caractères tirets (-), soulignés (_) et alphanumériques (a-z et 0-9). Dans le cas contraire, les lettres accentuées auront leurs accents enlevés et les autres caractères seront remplacés par le caractère souligné (_).</p>
+					<p>Vous disposez d'options de scan dans la section "Options / Ajout d'images".</p>
+					<p class="last icon icon_exclamation">Notez que cette opération peut être longue si vous avez un grand nombre d'images ou d'albums.</p>
+				</div>

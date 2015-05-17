@@ -1,0 +1,25 @@
+				<div class="h_item" id="h_moderate">
+					<h3>Modération des commentaires</h3>
+					<p>En cochant cette option, les commentaires ne seront pas visibles sur la galerie tant que vous ne les aurez pas validés. Les commentaires modérés sont désactivés (statut "en attente") et vous devrez les activer dans la section "Commentaires / Images" ou "Commentaires / Livre d'or".</p>
+					<p class="last">Notez que cette option est ignorée lorsque la fonctionnalité "Espace membres" est activée. Dans ce cas, pour  modérer les commentaires vous devrez choisir l'option "en attente" pour la permission de groupe "Ajout de commentaires".</p>
+				</div>
+				<div class="h_item" id="h_smilies">
+					<h3>Jeu d'icônes pour smilies</h3>
+					<p>Pour ajouter un nouveau jeu d'icônes, il faut créer dans le répertoire "images/smilies" un répertoire dont le nom ne doit contenir aucun espace, caractère spécial ou accentué, puis y ajouter vos fichiers d'icônes et enfin créer un fichier "icons.php" servant à faire la correspondance entre le code de chaque smiley et le nom de fichier de l'icône, en se servant de l'exemple suivant :</p>
+<pre>
+&lt;?php
+$smilies[':???:'] = 'confuse.png';
+$smilies[':cool:'] = 'cool.png';
+$smilies[':cry:'] = 'cry.png';
+$smilies[':eek:'] = 'eek.png';
+?&gt;</pre>
+				<p class="last">Vous êtes libre de mettre les codes et le nombre de smilies que vous souhaitez.</p>
+				</div>
+				<div class="h_item" id="h_antiflood">
+					<h3>Anti-flood</h3>
+					<p class="last">L'anti-flood permet de régler, après l'envoi d'un commentaire, la durée pendant laquelle un utilisateur ne peut pas poster un autre commentaire.</p>
+				</div>
+				<div class="h_item" id="h_maxurls">
+					<h3>Nombre maximum d'URLs</h3>
+					<p class="last">En interdisant totalement la présence d'URL (0) ou en la limitant fortement (1), vous bloquerez un grand nombre de spams, beaucoup de messages indésirables contenant un ou plusieurs URLs.</p>
+				</div>

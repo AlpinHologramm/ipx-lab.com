@@ -1,0 +1,11 @@
+				<div class="h_item" id="h_descriptions">
+					<h3>Modèles de description</h3>
+					<p>Les modèles de description permettent d'appliquer des éléments commun (texte ou HTML) pour toutes les descriptions des catégories et images. Si vous souhaitez afficher, en plus ou à la place de la description de chaque catégorie ou image, le même texte ou le même code HTML, cela est possible grâce aux modèles de description. L'intérêt du modèle de description est que vous disposez en outre de plusieurs "variables" contenant des informations des catégories et des images, ainsi que des structures conditionnelles qui permettent de tester la présence de certaines de ces informations.</p>
+					<p>Les variables disponibles sont : <span class="code">{DESCRIPTION}</span>, <span class="code">{ID}</span>, <span class="code">{PLACE}</span>, <span class="code">{TITLE}</span>, <span class="code">{URL}</span> pour les catégories et images, ainsi que <span class="code">{FILENAME}</span>, <span class="code">{HEIGHT}</span> et <span class="code">{WIDTH}</span> pour les images uniquement. Les structures conditionnelles disponibles sont <span class="code">{IF(DESCRIPTION)}...{ENDIF(DESCRIPTION)}</span> et <span class="code">{IF(PLACE)}...{ENDIF(PLACE)}</span>.</p>
+					<p>Voici un exemple de modèle de description pour catégories&nbsp;:</p>
+<pre class="last">
+{IF(DESCRIPTION)}&lt;a href="javascript:;" rel="category_description_{ID}" class="show_parts js_link"&gt;Lire la description&lt;/a&gt;
+&lt;span id="category_description_{ID}" style="display:none"&gt;
+{DESCRIPTION}&lt;/span&gt;{ENDIF(DESCRIPTION)}
+</pre>
+				</div>
