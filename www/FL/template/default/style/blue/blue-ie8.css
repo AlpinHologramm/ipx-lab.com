@@ -1,0 +1,13 @@
+/* IE 8 */
+/**************************************************
+*
+*	Outils pour catégories, albums et images.
+*
+**************************************************/
+#igalerie #obj_tools_link a.tool_menu_open,
+#igalerie #obj_tools_link a.tool_menu_open:hover {
+	background-color: #DEE6F1;
+	color: #DEE6F1;
+	border: none;
+	margin: -4px -3px 0 0;
+}

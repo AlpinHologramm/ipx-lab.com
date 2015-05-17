@@ -1,0 +1,184 @@
+/* IE 7 */
+#igalerie img {
+	-ms-interpolation-mode: bicubic;
+}
+
+
+
+/**************************************************
+*
+*	Header.
+*
+**************************************************/
+#igalerie #header_nav_links li {
+	white-space: normal;
+}
+#igalerie #header_links #search {
+	margin-top: 6px;
+}
+
+
+
+/**************************************************
+*
+*	Vignettes.
+*
+**************************************************/
+#igalerie #thumbs {
+	overflow: hidden;
+}
+#igalerie .thumbs dl {
+	float: left;
+	margin: 8px 7px 7px;
+}
+#igalerie .thumbs.l0 dl {
+	margin-bottom: 8px;
+}
+#igalerie .thumbs.l1 ul {
+	height: 1.35em;
+}
+#igalerie .thumbs.l2 ul {
+	height: 2.7em;
+}
+#igalerie .thumbs.l3 ul {
+	height: 4.05em;
+}
+#igalerie .thumbs.l4 ul {
+	height: 5.4em;
+}
+#igalerie .thumbs.l5 ul {
+	height: 6.75em;
+}
+#igalerie .thumbs.l6 ul {
+	height: 8.1em;
+}
+#igalerie .thumbs.l7 ul {
+	height: 9.45em;
+}
+#igalerie .thumbs.l8 ul {
+	height: 10.8em;
+}
+#igalerie .thumbs.l9 ul {
+	height: 12.15em;
+}
+#igalerie .thumbs li {
+	height: 1.35em;
+	overflow: hidden;
+	white-space: nowrap;
+}
+#igalerie .thumbs li.title {
+	height: auto;
+	max-height: 3.2em;
+	white-space: normal;
+}
+
+/* Images récentes */
+#igalerie .thumbs .new .new_message {
+	position: absolute;
+	padding: 0 0 1px;
+}
+
+/* Mode étendu */
+#igalerie .thumbs.thumbs_extended dl {
+	float: none;
+}
+#igalerie .thumbs.thumbs_extended dt {
+	margin-right: 10px;
+}
+#igalerie .thumbs.thumbs_extended ul {
+	height: auto;
+}
+#igalerie .thumbs.thumbs_extended li {
+	display: inline;
+}
+#igalerie .thumbs.thumbs_extended li.title,
+#igalerie .thumbs.thumbs_extended li.description {
+	height: auto;
+}
+
+
+
+/**************************************************
+*
+*	Contenu.
+*
+**************************************************/
+#igalerie #section_members #position,
+#igalerie #section_tags #position,
+#igalerie #section_history #position,
+#igalerie #section_cameras #position {
+	padding: 5px 30px 15px 16px;
+	border: none;
+}
+#igalerie #rss_links {
+	padding-top: 8px;
+	margin-bottom: 8px;
+}
+
+
+
+/**************************************************
+*
+*	Outils pour catégories, albums et images.
+*
+**************************************************/
+#igalerie #obj_tools_link {
+	overflow: hidden;
+}
+#igalerie .obj_tool_box {
+	width: 250px;
+}
+#igalerie #obj_tools_link a {
+	position: relative;
+}
+#igalerie #obj_tools_link a.tool_menu_open,
+#igalerie #obj_tools_link a.tool_menu_open:hover {
+	background-color: #DEE6F1;
+	color: #DEE6F1;
+	border: none;
+	margin: -4px -3px 0 0;
+}
+
+
+
+/**************************************************
+*
+*	Image.
+*
+**************************************************/
+/* Colonnes */
+#igalerie #image_infos,
+#igalerie #image_ratecom {
+	margin: 0 auto;
+	width: 49.8%;
+}
+#igalerie #image_ratecom {
+	left: -1px;
+	position: relative;
+}
+#igalerie #image_ratecom.image_column {
+	margin-left: 49.8%;
+}
+
+
+
+/**************************************************
+*
+*	Historique.
+*
+**************************************************/
+#igalerie #history {
+	width: 52em;
+}
+
+
+
+/**************************************************
+*
+*	Diaporama.
+*
+**************************************************/
+#igalerie #diaporama_bottom_right {
+	position: relative;
+	top: -24px;
+}
