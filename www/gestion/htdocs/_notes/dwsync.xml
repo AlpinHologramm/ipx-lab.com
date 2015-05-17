@@ -3,4 +3,7 @@
 <file name="main.inc.php" server="ftp.ipx-lab.com" local="130255704000000000" remote="130255704000000000" />
 <file name="filefunc.inc.php" server="ftp.ipx-lab.com" local="130255704000000000" remote="130255704000000000" />
 <file name="master.inc.php" server="ftp.ipx-lab.com" local="130255704000000000" remote="130255704000000000" />
+<file name="disabled.php" server="ftp.ipx-lab.com" local="130255704000000000" remote="130255704000000000" />
+<file name="document.php" server="ftp.ipx-lab.com" local="130255704000000000" remote="130255704000000000" />
+<file name="favicon.ico" server="ftp.ipx-lab.com" local="130255704000000000" remote="130255704000000000" />
 </dwsync>
