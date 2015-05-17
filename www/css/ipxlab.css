@@ -1,0 +1,21 @@
+#images {
+  
+}
+ 
+#images a img {
+    opacity: 0.3;/* l'opacite que vous voulez au depart */
+   
+    -ms-filter: "prodig:DXImageTransform.Microsoft.Alpha(Opacity=25)"; /* Hack IE8 */
+    filter: alpha(opacity = 25); /* Hack IE 5-7 */
+    -webkit-transition: opacity 0.5s ease-in-out;/* transition pour Chrome et Safari */
+    -moz-transition: opacity 0.5s ease-in-out;/* transition pour Firefox */
+    -o-transition: opacity 0.5s ease-in-out;/* transition pour Opéra */
+    transition: opacity 0.5s ease-in-out; /* on écrit cette ligne à la fin de façon à ce que ce soit elle qui soit prise en compte lorsque l'attribut transition sera pris en compte par tous les navigateurs */
+ 
+}
+ 
+#images a:hover img, #images a:focus img {
+    opacity: 0.9; /* opacite au survol */
+    -ms-filter:"prodig:DXImageTransform.Microsoft.Alpha(Opacity=90)"; /* Hack IE 8 */
+    filter: alpha(opacity = 90); /* Hack IE 5-7 */
+}

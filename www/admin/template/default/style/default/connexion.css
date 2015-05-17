@@ -1,0 +1,197 @@
+/**************************************************
+*
+*	Structure générale.
+*
+**************************************************/
+h1,p,form,body,html {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body {
+	height: 100%;
+}
+html {
+	font-size: 100%;
+}
+body {
+	color: black;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: .8em;
+	background: #fafafa;
+}
+#global {
+	text-align: center;
+}
+a {
+	color: black;
+	text-decoration: none;
+	border-bottom: 1px solid #884C2E;
+	position: relative;
+}
+a:hover {
+	border-width: 2px;
+	height: auto; /* Opera Fix */
+}
+input {
+	outline: none;
+}
+table {
+	font-size: 100%;
+	border-collapse: collapse;
+}
+pre {
+	font-family: "Courier New", serif;
+}
+
+/* Rapports */
+.report_msg {
+	font-weight: bold;
+	background: no-repeat 0 0;
+	min-height: 18px;
+	padding: 1px 0 2px 25px;
+	margin: 10px 0 20px;
+}
+.report_msg p {
+	margin-bottom: 5px;
+}
+.report_success {
+	color: #648F27;
+	background-image: url(icons/18x18/success.png);
+}
+.report_warning {
+	color: #C38A1B;
+	background-image: url(icons/18x18/warning.png);
+}
+.report_error {
+	color: #D60E0E;
+	background-image: url(icons/18x18/error.png);
+}
+
+/* Debug */
+#debug {
+	text-align: left;
+	padding: 30px 25px 0;
+}
+
+
+
+
+/**************************************************
+*
+*	Console de connexion.
+*
+**************************************************/
+h1 {
+	font-size: 200%;
+	font-weight: bold;
+	border-bottom: 3px solid #858055;
+	padding: 20px 15px 5px 30px;
+	color: #555;
+	font-family: Georgia, "Times New Roman", serif;
+	letter-spacing: .02em;
+	background: #F6F4E5 url(background.png);
+}
+#connexion {
+	text-align: left;
+	border: 1px solid #808080;
+	width: 350px;
+	margin: 25px auto;
+	text-align: left;
+	background: white;
+	box-shadow: 0 0 14px #989898;
+	-moz-box-shadow: 0 0 14px #989898;
+	-webkit-box-shadow: 0 0 14px #989898;
+}
+form {
+	padding: 15px 30px;
+	position: relative;
+}
+form .field {
+	margin-top: 15px;
+}
+form .field .text {
+	display: block;
+	width: 280px;
+	margin-top: 6px;
+	padding: 4px 3px;
+	background: #F9F8EF;
+	border: 1px solid silver;
+}
+input.text:focus {
+	border-color: #9D9977;
+}
+#submit {
+	text-align: right;
+	margin-bottom: 15px;
+}
+#submit input {
+	border: 1px solid silver;
+	outline: 0;
+	background: url(submit.png) repeat-x bottom left;
+	margin: 30px 0 0;
+	padding: 0 6px;
+	height: 26px;
+	white-space: nowrap;
+	vertical-align: middle;
+	display: inline-block;
+	overflow: visible;
+	font-family: Arial, Verdana, sans-serif;
+	border-radius: 5px;
+}
+#submit input:hover {
+	background: url(submit-hover.png) repeat-x top left;
+	box-shadow: 0 0 2px gray;
+}
+#options_link {
+	padding: 2px 0;
+	border-bottom: 1px solid #D4D4D4;
+	margin-top: 25px;
+}
+#options_link a {
+	background: #D4D4D4;
+	color: white;
+	font-weight: bold;
+	padding: 2px 6px 3px;
+	border: 0;
+	font-size: 90%;
+	border-radius: 6px 6px 0 0;
+	-moz-border-radius: 6px 6px 0 0;
+	-webkit-border-radius: 6px 6px 0 0;
+}
+#options_link a:hover {
+	background: #C0C0C0;
+	border-color: #C0C0C0;
+}
+#options {
+	/* IE fix */
+	position: relative;
+	overflow: auto;
+}
+#forgot {
+	margin-bottom: 30px;
+}
+#options p {
+	padding-top: 10px;
+}
+#link {
+	margin: -1px 0 10px;
+	padding-top: 10px;
+	text-align: right;
+	border-top: 1px solid #D4D4D4;
+}
+
+/* Connexion */
+#connexion_login .field {
+	font-size: 120%;
+}
+#connexion_login .text {
+	height: 20px;
+	font-size: 120%;
+	font-weight: normal;
+}
+#connexion_login #submit input {
+	font-size: 120%;
+	height: 30px;
+}

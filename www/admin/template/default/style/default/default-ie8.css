@@ -1,0 +1,88 @@
+/* IE8 */
+
+/**************************************************
+*
+*	Haut de page.
+*
+**************************************************/
+#header {
+	position: relative;
+}
+#connexion {
+	margin: 0 20px 0 16px;
+	display: inline;
+}
+
+/* langues d'édition */
+#lang_edition_list input {
+	margin-right: 5px;
+}
+
+
+
+/**************************************************
+*
+*	Menu.
+*
+**************************************************/
+#menu li {
+	position: relative;
+}
+
+
+
+/**************************************************
+*
+*	Contenu.
+*
+**************************************************/
+/* Outils */
+.tool {
+	background: url(fieldset-back.png) no-repeat 0 0;
+}
+.tool fieldset {
+	background: none;
+}
+
+
+
+/**************************************************
+*
+*	Objets.
+*
+**************************************************/
+.obj {
+	overflow: hidden;
+}
+
+/* Opacité sur les objets invisibles */
+.obj_invisible img {
+	filter: alpha(opacity=80);
+}
+.obj_invisible:hover img {
+	filter: alpha(opacity=100);
+}
+
+
+
+/**************************************************
+*
+*	Tableau de bord.
+*
+**************************************************/
+#dashboard_lastusers p {
+	position: relative;
+	top: -15px;
+}
+
+
+
+/**************************************************
+*
+*	Section : albums, modification des vignettes.
+*
+**************************************************/
+/* Jcrop */
+img + .jcrop-hline {
+	border-top: 1px solid #858055;
+}

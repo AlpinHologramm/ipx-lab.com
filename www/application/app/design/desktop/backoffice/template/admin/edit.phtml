@@ -1,0 +1,102 @@
+<sb-section title="section_title">
+
+    <form ng-submit="saveAdmin();">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="email"><?php echo $this->_("Email address"); ?></label>
+                <input type="email" id="email" ng-model="admin.email" class="form-control" placeholder="<?php echo $this->_("Email address"); ?>" />
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="company"><?php echo $this->_("Company"); ?></label>
+                <input type="text" id="company" ng-model="admin.company" class="form-control" placeholder="<?php echo $this->_("Company"); ?>" />
+            </div>
+        </div>
+
+        <div class="clear col-md-6">
+            <div class="form-group">
+                <label for="firstname"><?php echo $this->_("Firstname"); ?></label>
+                <input type="text" id="firstname" ng-model="admin.firstname" class="form-control" placeholder="<?php echo $this->_("Firstname"); ?>" />
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="lastname"><?php echo $this->_("Lastname"); ?></label>
+                <input type="text" id="lastname" ng-model="admin.lastname" class="form-control" placeholder="<?php echo $this->_("Lastname"); ?>" />
+            </div>
+        </div>
+
+        <div class="clear col-md-6">
+            <div class="form-group">
+                <label for="lastname"><?php echo $this->_("Address"); ?></label>
+                <textarea rows="5" id="address" ng-model="admin.address" class="form-control" placeholder="<?php echo $this->_("Address"); ?>"></textarea>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="country_code"><?php echo $this->_("Country"); ?></label>
+                <select id="country_code" class="form-control" ng-model="admin.country_code" ng-options="k as v for (k, v) in country_codes">
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="phone"><?php echo $this->_("Phone"); ?></label>
+                <input type="text" id="phone" ng-model="admin.phone" class="form-control" placeholder="<?php echo $this->_("Phone"); ?>" />
+            </div>
+        </div>
+
+        <div class="clear col-md-6">
+            <div class="form-group" ng-if="admin.id">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" ng-model="admin.change_password" />
+                        <?php echo $this->_("Change password"); ?>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <div class="checkbox">
+                    <label for="is_allowed_to_add_pages">
+                        <input type="checkbox" id="is_allowed_to_add_pages" ng-model="admin.is_allowed_to_add_pages" ng-checked="admin.is_allowed_to_add_pages" />
+                        <?php echo $this->_("Is allowed to add pages"); ?>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="slide-left" ng-if="!admin.id || admin.change_password">
+
+            <div class="clear form-group">
+                <div class="col-md-6">
+                    <label for="password"><?php echo $this->_("Password"); ?></label>
+                    <input type="password" id="password" ng-model="admin.password" class="form-control" placeholder="<?php echo $this->_("Password"); ?>" />
+                </div>
+                <div class="col-md-6">
+                    <label for="confirm_password"><?php echo $this->_("Confirm Password"); ?></label>
+                    <input type="password" id="confirm_password" ng-model="admin.confirm_password" class="form-control" placeholder="<?php echo $this->_("Confirm Password"); ?>" />
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary left"><?php echo $this->_("Save"); ?></button>
+                <sb-loader is_visible="form_loader_is_visible" type="'inner_content'" size="'small'" animation="'no'" class="form_loader"></sb-loader>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </form>
+
+</sb-section>

@@ -1,0 +1,44 @@
+<div class="content">
+    <div class="logo left">
+        <a href="<?php echo $this->getUrl(''); ?>" ng-click="$event.stopPropagation()">
+            <img src="<?php echo $this->getImage("header/logo.png"); ?>" id="logo" alt="Siberian CMS" title="Siberian CMS" width="151" />
+        </a>
+    </div>
+    <div id="backoffice_menu" class="menu backoffice_menu slide-down" ng-if="isLoggedIn" ng-class="{none: !isLoggedIn}">
+        <ul class="l1">
+            <li><a href="<?php echo $this->getUrl('backoffice'); ?>"><i class="fa fa-tachometer"></i><?php echo $this->_('Dashboard'); ?></a></li>
+            <li class="has_submenu">
+                <a href="#"><i class="fa fa-users"></i><?php echo $this->_('Manage'); ?></a>
+                <ul class="l2">
+                    <li><a href="<?php echo $this->getUrl('admin/backoffice_list'); ?>" class="first"><i class="fa fa-users"></i><?php echo $this->_('Users'); ?></a></li>
+                    <li><a class="last" href="<?php echo $this->getUrl('application/backoffice_view'); ?>"><i class="fa fa-mobile-phone"></i><?php echo $this->_('Application'); ?></a></li>
+                </ul>
+            </li>
+            <li><a href="<?php echo $this->getUrl('system/backoffice_config_design'); ?>"><i class="fa fa-pencil"></i><?php echo $this->_('Appearance'); ?></a></li>
+            <li class="has_submenu">
+                <a href="#"><i class="fa fa-cog"></i><?php echo $this->_('Settings'); ?></a>
+                <ul class="l2">
+                    <li><a href="<?php echo $this->getUrl('system/backoffice_config_general'); ?>" class="first"><i class="fa fa-home"></i><?php echo $this->_('General'); ?></a></li>
+                    <li><a href="<?php echo $this->getUrl('backoffice/account_list'); ?>" class="first"><i class="fa fa-users"></i><?php echo $this->_('Accounts'); ?></a></li>
+                    <li><a href="<?php echo $this->getUrl('installer/backoffice_module'); ?>"><i class="fa fa-cloud-download"></i><?php echo $this->_('Modules'); ?></a></li>
+                    <li><a href="<?php echo $this->getUrl('api/backoffice_key_list'); ?>"><i class="fa fa-key"></i><?php echo $this->_('APIs'); ?></a></li>
+                    <li><a href="<?php echo $this->getUrl('push/backoffice_certificate'); ?>"><i class="fa fa-comment-o"></i><?php echo $this->_('Push'); ?></a></li>
+                    <li><a href="<?php echo $this->getUrl('system/backoffice_config_email'); ?>" ng-class="{last: !isLoggedIn}"><i class="fa fa-exchange"></i><?php echo $this->_('Communication'); ?></a></li>
+                    <li><a href="<?php echo $this->getUrl('translation/backoffice_list'); ?>"><i class="fa fa-language"></i><?php echo $this->_('Translations'); ?></a></li>
+                    <li><a class="last" href="javascript:void(0);" ng-click="logout()" ng-show="isLoggedIn"><i class="fa fa-power-off"></i><?php echo $this->_('Log-out'); ?></a></li>
+                </ul>
+            </li>
+            <li><a href="<?php echo $this->getUrl("backoffice/notif_list"); ?>" class="block"><i class="fa fa-envelope"></i><?php echo $this->_("Messages"); ?></a></li>
+        </ul>
+    </div>
+    <?php /*
+    <div class="right">
+        <select id="change_language" tabindex="1">
+            <?php foreach (Core_Model_Language::getLanguages() as $language) : ?>
+            <option value="<?php echo $this->getCurrentUrl(true, $language->getCode()); ?>"<?php if(Core_Model_Language::getCurrentLanguage() == $language->getCode()) : ?> selected="selected"<?php endif; ?>><?php echo $language->getName(); ?></option>
+            <?php endforeach ?>
+        </select>
+    </div>
+    */ ?>
+    <div class="clear"></div>
+</div>

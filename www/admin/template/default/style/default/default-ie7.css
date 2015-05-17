@@ -1,0 +1,174 @@
+/* IE7 */
+
+/**************************************************
+*
+*	Tableau de bord.
+*
+**************************************************/
+#dashboard h3 {
+	padding: 7px 0 5px 18px;
+	margin: 0 10px 10px;
+}
+
+/* Statistiques de la galerie */
+#dashboard_stats ul + ul {
+	float: left;
+	margin-left: -1px;
+}
+
+
+
+/**************************************************
+*
+*	Haut de page.
+*
+**************************************************/
+/* langues d'édition */
+#lang_edition_list input {
+	margin-right: 5px;
+	position: relative;
+	top: -2px;
+}
+
+
+
+/**************************************************
+*
+*	Contenu.
+*
+**************************************************/
+img {
+	-ms-interpolation-mode: bicubic;
+}
+
+/* Outils */
+.tool {
+	background: url(fieldset-back.png) no-repeat 0 0;
+}
+.tool fieldset {
+	background: none;
+}
+#show_mode {
+	position: relative;
+	top: 2px;
+}
+
+
+
+/**************************************************
+*
+*	Section : albums, modification des vignettes.
+*
+**************************************************/
+/* Jcrop */
+.jcrop-handle {
+	width: 9px;
+	height: 9px;
+}
+.jcrop-tracker {
+	background-color: gray;
+}
+img + .jcrop-hline {
+	border-top: 1px solid #858055;
+}
+
+
+
+/**************************************************
+*
+*	Objets.
+*
+**************************************************/
+/* Opacité sur les objets invisibles */
+.obj_invisible img {
+	filter: alpha(opacity=80);
+}
+.obj_invisible:hover img {
+	filter: alpha(opacity=100);
+}
+
+/* Lien vers la galerie */
+.obj_gallery_link:hover {
+	border: 0;
+	padding: 0;
+}
+
+
+
+/**************************************************
+*
+*	Section : utilisateurs, groupes.
+*
+**************************************************/
+#groups td.desc {
+	width: 200px;
+}
+.access li span.cont {
+	height: 19px;
+}
+
+
+
+/**************************************************
+*
+*	Section : albums, envoi d'images.
+*
+**************************************************/
+#fileUploadQueue {
+	position: relative;
+}
+
+
+
+/**************************************************
+*
+*	Formulaires.
+*
+**************************************************/
+/* Étiquette HTML */
+.field_html .field_html_textarea {
+	background: none;
+}
+
+/* textarea resizable */
+div.grippie {
+	top: -2px;
+}
+.field_html div.grippie {
+	top: -3px;
+}
+.field_html textarea {
+	top: -1px;
+	position: relative;
+}
+
+
+
+/**************************************************
+*
+*	Aide contextuelle.
+*
+**************************************************/
+.msie_help_title a {
+	top: -22px;
+	left: -10px;
+}
+
+
+
+/**************************************************
+*
+*	Section : thèmes.
+*
+**************************************************/
+#theme_css, #themes .submit {
+	float: left;
+}
+.theme_inner {
+	padding: 15px 0 11px;
+}
+.theme img {
+	border: 2px solid silver;
+	position: relative;
+	top: -2px;
+}
