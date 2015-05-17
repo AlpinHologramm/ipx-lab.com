@@ -1,0 +1,23 @@
+/* IE 8 */
+/**************************************************
+*
+*	Image.
+*
+**************************************************/
+#igalerie #image_resize_msg {
+	background: #2A2A2A;
+	color: #7B7B70;
+}
+
+
+
+/**************************************************
+*
+*	Outils pour catégories, albums et images.
+*
+**************************************************/
+#igalerie #obj_tools_link a.tool_menu_open,
+#igalerie #obj_tools_link a.tool_menu_open:hover {
+	background-color: #808080;
+	color: #808080;
+}
