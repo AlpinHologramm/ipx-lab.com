@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+
+    <download_source>
+        <addLayout name="base_email" />
+        <views>
+            <content_email class="core_view_email_default" template="application/download/source.phtml" />
+        </views>
+    </download_source>
+
+</layout>

@@ -1,0 +1,15 @@
+<div>
+    <div class="tabbar background-tabbar"></div>
+    <ul class="tabbar">
+        <li ng-repeat="option in features.overview.options" ng-if="option.is_active" class="border-color">
+            <a ng-hide="layout.properties.options.current === option" href="{{ option.url }}" class="item">
+                <img ng-src="{{ option.icon_url }}" ng-class="{ colorable: option.icon_is_colorable }" width="30" height="30" />
+                <span class="block">{{ option.name }}</span>
+            </a>
+            <span ng-show="layout.properties.options.current === option" class="current item">
+                <img ng-src="{{ option.icon_url }}" ng-class="{ colorable: option.icon_is_colorable }" width="30" height="30" />
+                <span class="block">{{ option.name }}</span>
+            </span>
+        </li>
+    </ul>
+</div>

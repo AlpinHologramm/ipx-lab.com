@@ -1,0 +1,112 @@
+<?php $customer = $this->getCurrentCustomer(); ?>
+<div class="application_customer application">
+    <div class="application_header app_name">
+        <?php echo $this->getPartialHtml('customization_header'); ?>
+    </div>
+    <div class="application_content inner_content">
+        <div class="title">
+            <i class="left icon-user"></i>
+            <h2 class="left inner_content f-rounded">
+                <?php if($customer->getId()) : ?>
+                <?php echo $this->_("Edit the user %s", $customer->getName()); ?>
+                <?php else : ?>
+                <?php echo $this->_("Create a new user"); ?>
+                <?php endif; ?>
+            </h2>
+            <div class="clear"></div>
+            <hr class="reverse" />
+        </div>
+        <div class="area">
+            <h3 class="title">
+                <span class="left area">
+                    <?php echo $this->_("User Information"); ?>
+                </span>
+                <hr class="reverse" />
+                <div class="clear"></div>
+            </h3>
+            <div id="customer_forms" class="forms">
+                <div id="customer_form_new" class="customer_form">
+                    <form id="customerForm" action="<?php echo $this->getUrl('customer/application/save'); ?>" method="post">
+                        <div class="buttons">
+                            <button type="button" id="cancel_customer" class="delete left"><i class="icon-arrow-left"></i></button>
+                            <button type="submit" class="default_button right">OK</button>
+                        </div>
+                        <div class="clear"></div>
+                        <table class="list left" width="45%">
+                            <tbody>
+                                <tr>
+                                    <td class="label"><label for="civility"><?php echo $this->_('Gender'); ?> <span class="input-required">*</span> : </label></td>
+                                    <td>
+                                        <select class="required" name="civility" id="civility">
+                                            <option value="m"<?php if($customer->getCivility() == 'm') : ?> selected="selected"<?php endif; ?>><?php echo $this->_('Mr'); ?></option>
+                                            <option value="mme"<?php if($customer->getCivility() == 'mme') : ?> selected="selected"<?php endif; ?>><?php echo $this->_('Mrs'); ?></option>
+                                            <option value="mlle"<?php if($customer->getCivility() == 'mlle') : ?> selected="selected"<?php endif; ?>><?php echo $this->_('Miss'); ?></option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label"><label for="firstname"><?php echo $this->_('First name'); ?> <span class="input-required">*</span> : </label></td>
+                                    <td><input type="text" value="<?php echo $customer->getFirstname() ?>" class="required input" name="firstname" id="firstname"></td>
+                                </tr>
+                                <tr>
+                                    <td class="label"><label for="lastname"><?php echo $this->_('Last name'); ?> <span class="input-required">*</span> : </label></td>
+                                    <td><input type="text" value="<?php echo $customer->getLastname() ?>" class="required input" name="lastname" id="lastname"></td>
+                                </tr>
+                                <tr>
+                                    <td class="label"><label for="email"><?php echo $this->_('Email'); ?> <span class="input-required">*</span> : </label></td>
+                                    <td><input type="text" value="<?php echo $customer->getEmail() ?>" class="required email input" name="email" id="email"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="list right" width="45%">
+                            <tbody>
+                                <tr>
+                                    <td class="label"><label for="password"><?php echo $this->_('Password'); ?> <span class="input-required">*</span> :</label></td>
+                                    <td><input type="password" value="" name="password" class="input<?php if(!$customer->getId()) : ?> required<?php endif; ?>" id="password"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="label">
+                                        <label class="checkbox" for="show_in_social_gaming">
+                                        <input type="checkbox"<?php if($customer->getShowInSocialGaming()) : ?> checked="checked"<?php endif; ?> id="show_in_social_gaming" class="" name="show_in_social_gaming" value="1" />
+                                        <?php echo $this->_("This user is visible in ranking"); ?>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="label">
+                                        <label class="checkbox" for="can_access_locked_features">
+                                        <input type="checkbox"<?php if($customer->canAccessLockedFeatures()) : ?> checked="checked"<?php endif; ?> id="can_access_locked_features" class="" name="can_access_locked_features" value="1" />
+                                        <?php echo $this->_("This user can access the pages locked by the \"Locker\" feature"); ?>
+                                        </label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="clear"></div>
+                        <br />
+                        <p class="input-required">* <?php echo $this->_('Required fields'); ?></p>
+                        <input type="hidden" name="customer_id" value="<?php echo $customer->getId(); ?>" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+    $('#customerForm').submit(function() {
+        if($(this).valid()) {
+            reload(this, this.action, true, function(data) {
+                if(data.success) {
+                    window.location = "<?php echo $this->getUrl("customer/application/list"); ?>";
+                }
+            });
+        }
+        return false;
+    });
+
+    $('#cancel_customer').click(function() {
+        window.location = "<?php echo $this->getUrl("customer/application/list"); ?>";
+    });
+
+</script>

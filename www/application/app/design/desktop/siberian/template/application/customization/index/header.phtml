@@ -1,0 +1,45 @@
+<?php $current_link = $this->getCurrentLink() ?>
+<?php $settings_links = array('push', 'url', 'api_keys', 'module'); ?>
+<?php if($this->getApplication()) : ?>
+<div class="content">
+    <div class="application_name left">
+        <img src="<?php echo $this->getApplication()->getIcon(); ?>" width="94" height="94" class="icon" />
+        <span id="header_app_name" class="f-rounded"><?php echo $this->getApplication()->getShortName(); ?></span>
+    </div>
+    <div class="links submenu a-center right">
+        <ul>
+            <li>
+                <a href="<?php echo $this->getUrl('application/customization_design_style/edit'); ?>" class="block edit header no-background<?php if($current_link == 'edit'): ?> active<?php endif; ?>">
+                    <i class="icon-cogs"></i>
+                    <span class="block f-bold toupper"><?php echo $this->_('Editor'); ?></span>
+                </a>
+            </li>
+            <li>
+                <a href="<?php echo $this->getUrl('application/promote'); ?>" class="block promote header no-background<?php if($current_link == 'promote'): ?> active<?php endif; ?>">
+                    <i class="icon-qrcode"></i>
+                    <span class="block f-bold toupper"><?php echo $this->_('Promote'); ?></span>
+                </a>
+            </li>
+            <li>
+                <a href="<?php echo $this->getUrl('application/analytics'); ?>" class="block analytics header no-background<?php if($current_link == 'analytics'): ?> active<?php endif; ?>">
+                    <i class="icon-bar-chart"></i>
+                    <span class="block f-bold toupper"><?php echo $this->_('Analytics'); ?></span>
+                </a>
+            </li>
+            <li>
+                <a href="<?php echo $this->getUrl('customer/application/list'); ?>" class="block customer header no-background<?php if($current_link == 'customer'): ?> active<?php endif; ?>">
+                    <i class="icon-user"></i>
+                    <span class="block f-bold toupper"><?php echo $this->_('Users'); ?></span>
+                </a>
+            </li>
+            <li>
+                <a href="<?php echo $this->getUrl('application/settings'); ?>" class="block url header no-background<?php if($current_link == 'url'): ?> active<?php endif; ?>">
+                    <i class="icon-info"></i>
+                    <span class="block f-bold toupper"><?php echo $this->_('Domain'); ?></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+</div>
+<?php endif; ?>

@@ -1,0 +1,13 @@
+<div>
+    <ul class="image_gallery">
+        <li ng-repeat="image in collection" class="image background_image" image-src="image.url" sb-image ng-click="showGallery($index)"></li>
+    </ul>
+
+    <sb-loader is-loading="show_loader_more" size="'48'" block="'background'"></sb-loader>
+
+    <div class="padding" ng-if="!show_loader_more && enable_load_onscroll">
+        <button type="button" class="button" ng-click="loadMore();"><?php echo $this->_("Load More"); ?></button>
+    </div>
+</div>
+
+<div sb-image-gallery gallery="gallery"></div>

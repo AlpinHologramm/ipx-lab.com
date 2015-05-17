@@ -1,0 +1,33 @@
+<?php $current = $this->getCurrentLink(); ?>
+<div class="menu header">
+    <div class="content navigation">
+        <ul class="">
+            <li class="header left">
+                <a href="<?php echo $this->getUrl('admin/account/edit'); ?>" class="header<?php if($current == 'my_account') : ?> active<?php endif; ?>">
+                    <i class="icon-user"></i>
+                    <?php echo $this->_('My account'); ?>
+                </a>
+            </li>
+
+            <li class="header right">
+                <span class="hey left"><?php echo $this->_('Log-out') ?></span>
+
+                <a href="<?php echo $this->getUrl('admin/account/logout'); ?>" class="logout">
+                    <span class="header reverse rounded">
+                        <i class="left icon-off"></i>
+                    </span>
+                </a>
+            </li>
+
+            <?php if($url = System_Model_Config::getValueFor("support_link")) : ?>
+            <li class="header right">
+                <a href="<?php echo $url; ?>" target="_blank" class="header">
+                    <i class="icon-medkit"></i>
+                    <?php echo $this->_('Support'); ?>
+                </a>
+            </li>
+            <?php endif; ?>
+        </ul>
+        <div class="clear"></div>
+    </div>
+</div>

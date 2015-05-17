@@ -1,0 +1,9 @@
+.layout-left-sidebar {position:absolute;top:0;bottom:0;left:0;z-index:1;}
+.layout-left-sidebar .tabbar {text-align:center;height:100%;}
+.layout-left-sidebar .tabbar .item {margin:0 5px 5px 5px;padding:10px;display:block;}
+.layout-left-sidebar .tabbar .item.current {cursor:default;border-right:3px solid;}
+.toggleLeftSideBarIcon {width:25px;float:left;padding:11px;cursor:pointer;}
+.layout-bottom-sidebar .overview-tabbar {position:absolute;bottom:0;left:0;right:0;overflow:hidden;z-index:30;}
+.layout-bottom-sidebar .full-tabbar {position:absolute;bottom:0;left:0;right:0;overflow:hidden;z-index:30;}
+.layout-bottom-sidebar #scrollview_tabbar_items.full-tabbar {opacity:1;filter:alpha(opacity=100);}
+.at-view-slide.background.with-bottom-sidebar .background_image {overflow:auto;}
