@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
 <file name="help.png" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
+<file name="basket-thumb-active.png" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
+<file name="basket-thumb.png" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
+<file name="cancel.png" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
+<file name="color-pencil.png" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
+<file name="comments.png" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
+<file name="error.png" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
+<file name="fav-thumb-active.png" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
+<file name="fav-thumb.png" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
+<file name="license.txt" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
+<file name="select-thumb-active.png" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
+<file name="select-thumb.png" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
 <file name="fav-mini.png" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
 <file name="success.png" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
 <file name="information.png" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
@@ -35,15 +46,4 @@
 <file name="stats.png" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
 <file name="feed.png" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
 <file name="gmaps-nav.png" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
-<file name="basket-thumb-active.png" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
-<file name="basket-thumb.png" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
-<file name="cancel.png" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
-<file name="color-pencil.png" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
-<file name="comments.png" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
-<file name="error.png" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
-<file name="fav-thumb-active.png" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
-<file name="fav-thumb.png" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
-<file name="license.txt" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
-<file name="select-thumb-active.png" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
-<file name="select-thumb.png" server="ftp.ipx-lab.com" local="130756399200000000" remote="130756399200000000" />
 </dwsync>

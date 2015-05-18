@@ -1,0 +1,12 @@
+Options -Indexes
+Options -MultiViews
+
+<Files ~ "\.(inc|ttf)$">
+	Deny from all
+</Files>
+
+
+
+<IfModule mod_security.c>
+	SecFilterEngine Off
+</IfModule>
